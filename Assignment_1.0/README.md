@@ -79,3 +79,32 @@ Go to the location where the executable file of that app is present and the type
 ![Image](https://www.digitalcitizen.life/wp-content/uploads/2020/10/command_prompt_9.png)
 
 To access help in the "*COMMAND PROMPT*", you have to type *help* command and then press *Enter*.
+
+# SOME TERMINOLOGY
+
+### * ***CLIENTSIDE AND SERVERSIDE ***
+      
+*Server-side* is the systems that run on the server, and *client-side* is the software that runs on a user’s web browser. Client-side web development involves interactivity and displaying data, server-side is about working behind the scenes to manage data.
+
+*Client-side developers* use their coding skills to create visually appealing, functional, and helpful web applications and dynamic websites. These programmers are responsible for every part of a website that users see or interact with. Homepages, shopping pages, slideshows—virtually any visible feature that shows up in a web browser or requires user input falls under this discipline.*Client-side developers* are also known as *Frontend Programmer*.
+
+To understand what a *server-side developer* does, we must first go over how a website works and how it’s different from a picture or an interactive text document. The client-side of a website is simply a display and collection platform for information. The site communicates with web servers, using them to retrieve and send data from databases to provide you with the services you need. This work is done on server side.These programmers are known as *Backend programmer*.
+
+### * ***HTTP Protocols***
+
+*The Hypertext Transfer Protocol* is an application protocol for distributed, collaborative, hypermedia information systems that allows users to communicate data on the World Wide Web.It was invented alongside HTML to create the first interactive, text-based web browser: the original World Wide Web. Today, the protocol remains one of the primary means of using the Internet.
+
+### * ***HTTP vs HTTPS***
+
+HTTP | HTTPS
+---- | -----
+It lacks security mechanism to encript the data. | It provides SSL or TLS digital certificate to secure the communication between server and client.
+It operates at application layer. | It operates at transport layer.
+By default it operates on port 80. | By default it operates on port 443.
+It is fast. | It is slower. 
+
+### * ***FRAMEWORKS vs LIBRARIES***
+
+The technical difference between a framework and library lies in a term called *inversion of control*.
+
+When you use a library, **you are in charge of the flow** of the application. You are choosing when and where to call the library. When you use a framework, **the framework is in charge of the flow**. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
