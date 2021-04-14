@@ -82,7 +82,7 @@ To access help in the "*COMMAND PROMPT*", you have to type *help* command and th
 
 # SOME TERMINOLOGY
 
-* ### ***CLIENTSIDE AND SERVERSIDE ***
+* ### ***CLIENTSIDE AND SERVERSIDE***
       
 *Server-side* is the systems that run on the server, and *client-side* is the software that runs on a user’s web browser. Client-side web development involves interactivity and displaying data, server-side is about working behind the scenes to manage data.
 
