@@ -4,7 +4,7 @@
 - [x] **Learning basic commands for windows**
 - [x] **Create an account on Github**
 - [x] **Trying the commands learnt so far**
-- [ ] **Reading about few thing**
+- [x] **Reading about few thing**
 
 
 
@@ -82,7 +82,7 @@ To access help in the "*COMMAND PROMPT*", you have to type *help* command and th
 
 # SOME TERMINOLOGY
 
-### * ***CLIENTSIDE AND SERVERSIDE ***
+* ### ***CLIENTSIDE AND SERVERSIDE ***
       
 *Server-side* is the systems that run on the server, and *client-side* is the software that runs on a user’s web browser. Client-side web development involves interactivity and displaying data, server-side is about working behind the scenes to manage data.
 
@@ -90,11 +90,11 @@ To access help in the "*COMMAND PROMPT*", you have to type *help* command and th
 
 To understand what a *server-side developer* does, we must first go over how a website works and how it’s different from a picture or an interactive text document. The client-side of a website is simply a display and collection platform for information. The site communicates with web servers, using them to retrieve and send data from databases to provide you with the services you need. This work is done on server side.These programmers are known as *Backend programmer*.
 
-### * ***HTTP Protocols***
+* ### ***HTTP Protocols***
 
 *The Hypertext Transfer Protocol* is an application protocol for distributed, collaborative, hypermedia information systems that allows users to communicate data on the World Wide Web.It was invented alongside HTML to create the first interactive, text-based web browser: the original World Wide Web. Today, the protocol remains one of the primary means of using the Internet.
 
-### * ***HTTP vs HTTPS***
+* ### ***HTTP vs HTTPS***
 
 HTTP | HTTPS
 ---- | -----
@@ -103,7 +103,7 @@ It operates at application layer. | It operates at transport layer.
 By default it operates on port 80. | By default it operates on port 443.
 It is fast. | It is slower. 
 
-### * ***FRAMEWORKS vs LIBRARIES***
+* ### ***FRAMEWORKS vs LIBRARIES***
 
 The technical difference between a framework and library lies in a term called *inversion of control*.
 
