@@ -1,8 +1,8 @@
--[x]**Git Installation**
--[x]**Learning basic commands for windows**
--[x]**Create an account on Github**
--[]**Trying the commands learnt so far**
--[]**Reading about few thing**
+- [x] **Git Installation**
+- [x] **Learning basic commands for windows**
+- [x] **Create an account on Github**
+- [ ] **Trying the commands learnt so far**
+- [ ] **Reading about few thing**
 
 # CMD commands 
 
