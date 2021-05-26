@@ -79,18 +79,8 @@
 </div>
 
 <script>
-
 const baseURL = "http://127.0.0.1:12345/";
-
 let TOKEN = "";
-
-
-
-
-
-
-
-
 let dataContainer = document.getElementById("dataContainer");
 let dataForm = document.getElementById("dataForm");
 let dataHome = document.getElementById("dataHome");
@@ -120,7 +110,6 @@ tb.addEventListener('click', async () =>{
 let form = document.getElementById("registerForm");
 form.onsubmit = async (e) => {
     e.preventDefault();
-
     let name = document.getElementById("name");
     let data = document.getElementById("data");
     let token = document.getElementById("token");
@@ -232,7 +221,6 @@ dataForm.onsubmit = async (e) => {
     })
     .catch(err => console.log(err));
 };
-
 </script>
 </body>
 </html>
