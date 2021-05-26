@@ -9,6 +9,6 @@ Got to know some basics web terminology and learnt how to work on github. Also l
 
 In this week I have learnt HTML and CSS . Made a personal website using these two and hosted on github .
 
-# Week 3
+## Week 3
 
 This week I got to know about javascript . Used fetch(),promises,async,await in the assignment.
