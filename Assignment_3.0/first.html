@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    
+<style>
+    button:hover{
+        background-color: rgb(236, 28, 28);
+    }
+    input:hover{
+        background-color: rgb(20, 226, 233);
+    }
+</style>
+
+
+<body>
+    
+    <hr><div style="background-color: black;color: white;text-align: center;padding-top: 10px;padding-bottom: 10px;"><hr>
+    <div  id="btnContainer">
+        <div id="getToken">
+            <p>Get token to add user, or get data for a user.</p>
+            <div id="btnBox">
+                <button id="btnToken" style="padding: 7px;margin-right: 10px;">Get Token</button>
+                <button id="btnUserData" style="padding: 7px;">Get Data</button>
+            </div>
+        </div>
+    </div>
+    <hr></div>
+<div  id="container">
+    <div style="background-color: yellow;color: white;text-align: center;"><hr>
+    <button id="Home" style="padding: 7px;padding-left: 10px;padding-right: 10px;">Back</button>
+    <hr></div>
+    <div style="text-align: center; background-color: black;color: white;">
+    <p id="tokenPara" ></p>
+    <br>
+    <form action="" id="registerForm" >
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name" placeholder="Username" style="margin-left: 5px;padding: 5px;"><br>
+        <label for="data">Data:</label>
+        <input type="text" name="data" id="data" placeholder="Data" style="margin-left: 39px;padding: 5px;"><br>
+        <label for="token">Token:</label>
+        <input type="text" name="token" id="token" placeholder="Token" style="margin-left: 29px;padding: 5px;"><br>
+        <p id="res"></p>
+        <input type="submit" name="submit" style="padding: 7px;">
+    </form>
+    <hr>
+    </div>
+    
+</div>
+
+<div id="dataContainer">
+    <div style="background-color: yellow;color: white;text-align: center;"><hr>
+    <button id="dataHome" style="padding: 7px;padding-left: 10px;padding-right: 10px;"> Back</button>
+    <hr></div>
+    <div style="text-align: center; background-color: black;color: white; padding-top: 10px;padding-bottom: 10px;">
+    <form action="" id="dataForm">
+        <label for="dataToken">Token:</label>
+        <input type="text" name="dataToken" id="dataToken" placeholder="Token">
+        <p id="dataRes"></p>
+        <input type="submit" name="submit" style="padding: 7px;">
+    </form>
+    <hr>
+    </div>
+    <br>
+    <div id="results" style="background-color: rgb(20, 20, 19);color: white;text-align: center;">
+        <div >
+            <p>USERNAME : <b id="user1"></b></p>
+        </div>
+        <div >
+            <p>DATA : <b id="data1"></b></p>
+            
+        </div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
