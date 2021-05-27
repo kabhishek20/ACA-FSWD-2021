@@ -21,24 +21,24 @@
 <body>
     
     <hr><div style="background-color: black;color: white;text-align: center;padding-top: 10px;padding-bottom: 10px;"><hr>
-    <div  id="btnContainer">
+    <div  id="buttons">
         <div id="getToken">
             <p>Get token to add user, or get data for a user.</p>
-            <div id="btnBox">
-                <button id="btnToken" style="padding: 7px;margin-right: 10px;">Get Token</button>
-                <button id="btnUserData" style="padding: 7px;">Get Data</button>
+            <div>
+                <button id="gettokenbutton" style="padding: 7px;margin-right: 10px;">Get Token</button>
+                <button id="getuserdatabutton" style="padding: 7px;">Get Data</button>
             </div>
         </div>
     </div>
     <hr></div>
-<div  id="container">
+<div  id="outerbox">
     <div style="background-color: yellow;color: white;text-align: center;"><hr>
-    <button id="Home" style="padding: 7px;padding-left: 10px;padding-right: 10px;">Back</button>
+    <button id="main" style="padding: 7px;padding-left: 10px;padding-right: 10px;">Back</button>
     <hr></div>
     <div style="text-align: center; background-color: black;color: white;">
-    <p id="tokenPara" ></p>
+    <p id="resultoftoken" ></p>
     <br>
-    <form action="" id="registerForm" >
+    <form action="" id="form" >
         <label for="name">Username:</label>
         <input type="text" name="name" id="name" placeholder="Username" style="margin-left: 5px;padding: 5px;"><br>
         <label for="data">Data:</label>
@@ -53,7 +53,7 @@
     
 </div>
 
-<div id="dataContainer">
+<div id="userdata">
     <div style="background-color: yellow;color: white;text-align: center;"><hr>
     <button id="dataHome" style="padding: 7px;padding-left: 10px;padding-right: 10px;"> Back</button>
     <hr></div>
@@ -81,7 +81,7 @@
 <script>
 const baseURL = "http://127.0.0.1:12345/";
 let TOKEN = "";
-let dataContainer = document.getElementById("dataContainer");
+let dataContainer = document.getElementById("userdata");
 let dataForm = document.getElementById("dataForm");
 let dataHome = document.getElementById("dataHome");
 let dataToken = document.getElementById("dataToken");
@@ -94,10 +94,10 @@ const getToken = async () => {
         }
     );
 };
-let tb = document.getElementById("btnToken");
-let bc = document.getElementById("btnContainer");
-let cont = document.getElementById("container");
-let ft = document.getElementById("tokenPara");
+let tb = document.getElementById("gettokenbutton");
+let bc = document.getElementById("buttons");
+let cont = document.getElementById("outerbox");
+let ft = document.getElementById("resultoftoken");
 tb.addEventListener('click', async () =>{
     await getToken();
     bc.style.display = 'none';
@@ -107,7 +107,7 @@ tb.addEventListener('click', async () =>{
     console.log('token displayed');
 });
 
-let form = document.getElementById("registerForm");
+let form = document.getElementById("form");
 form.onsubmit = async (e) => {
     e.preventDefault();
     let name = document.getElementById("name");
@@ -156,12 +156,12 @@ form.onsubmit = async (e) => {
     .catch(err => console.log(err));
 };
 
-let hb = document.getElementById("Home");
+let hb = document.getElementById("main");
 hb.addEventListener('click', () =>{
     bc.style.display = 'flex';
     cont.style.display = 'none';
 });
-let db = document.getElementById("btnUserData");
+let db = document.getElementById("getuserdatabutton");
 db.addEventListener('click', () => {
     bc.style.display = 'none';
     dataContainer.style.display = 'flex';
